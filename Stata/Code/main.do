@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 	* Set version
-	*version ???
+	*version 18
 
 	* Set project global(s)	
 	// User: you 
@@ -11,7 +11,7 @@
 	
 	* Add file paths to DataWork folder and the Github folder for RRF2024
 	if "`c(username)'" == "wb631307" {
-        *global onedrive "???/DataWork"
+        global onedrive "C:/Users/wb631307/OneDrive - WBG/Documents/Course Materials/Course Materials/DataWork"
 		global github 	"C:/Users/wb631307/OneDrive - WBG/Documents/GitHub/rrf24_train_Johan"
     }
 	
@@ -25,6 +25,7 @@
 
 
 	* Install packages 
+ /*
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout keeporder grc1leg2 //Add required user-written commands
 
 	foreach command of local user_commands {
@@ -33,10 +34,13 @@
 		   ssc install `command'
 	   }
 	}
+	
+	*/
 
 	* Run do files 
 	* Switch to 0/1 to not-run/run do-files 
 	if (0) do "${code}/01-processing-data.do"
 
 
+	
 * End of do-file!	
