@@ -3,7 +3,7 @@
 *******************************************************************************/
     clear all
 	* Set version
-	version 18
+	version 16
 
 	* Set project global(s)	
 	// User: you 
@@ -15,6 +15,11 @@
 		global github 	"C:/Users/wb631307/OneDrive - WBG/Documents/GitHub/rrf24_train_Johan"
     }
 	
+	
+	if "`c(username)'" == "jzava" {
+        global onedrive "C:\Users\jzava\Dropbox\Research & Consulting\2 Consulting\World Bank DIME\DataWork"
+		global github 	"C:\Users\jzava\Documents\GitHub\GitHub-rrf-24-JorgeZavala"
+    }
 	
 	* Set globals for sub-folders 
 	global data 	"${onedrive}/Data"
